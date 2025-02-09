@@ -143,7 +143,7 @@ export const Projects = () => {
           <>
           <ParticlesComponent/>
           <ProjectCard key={index}>
-            <ProjectImage src={project.image} alt={project.title} />
+            <ProjectImage src={`${process.env.PUBLIC_URL + project.image}`} alt={project.title} />
             <ProjectTitle>{project.title}</ProjectTitle>
             <ProjectDescription>{project.description}</ProjectDescription>
             <ButtonContainer>
