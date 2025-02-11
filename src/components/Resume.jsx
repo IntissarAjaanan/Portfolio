@@ -36,6 +36,7 @@ const DownloadButton = styled.a`
 `;
 
 export const Resume = () => {
+
   return (
     <ResumeWrapper>
       <Title>Resume</Title>
@@ -43,9 +44,13 @@ export const Resume = () => {
         You can download my full resume to get more detailed and
         information about my background and skills.
       </Paragraph>
-      <DownloadButton href="/Docs/cv.pdf" download>
+      <DownloadButton
+        href="https://drive.google.com/uc?export=download&id=1aWSngNC8fyskoXz4VuRrySVbAweAFr-R"
+        download="cv.pdf"
+      >
         Download Resume
       </DownloadButton>
+
     </ResumeWrapper>
   );
 };
