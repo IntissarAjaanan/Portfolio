@@ -131,7 +131,7 @@ export const Projects = () => {
       image: "/images/absence.jpg",
       description: "An application to manage and track  trainers and trainees absences efficiently.",
       demoLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/IntissarAjaanan/gestion_absence.git"
     },
   ];
 
@@ -147,9 +147,12 @@ export const Projects = () => {
             <ProjectTitle>{project.title}</ProjectTitle>
             <ProjectDescription>{project.description}</ProjectDescription>
             <ButtonContainer>
-              <Button href={project.demoLink} target="_blank">
-                <FaEye />
-              </Button>
+              {project.demoLink !== "#" && (
+                  <Button href={project.demoLink} target="_blank">
+                    <FaEye />
+                  </Button>
+                )
+              }
               <Button href={project.githubLink} target="_blank">
                 <FaGithub />
               </Button>
